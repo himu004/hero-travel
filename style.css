@@ -12,6 +12,8 @@ body {
     font-family: "Mulish", sans-serif;
 }
 
+/* Nav Bar */
+
 .nav-container{
     display: flex;
     justify-content: space-between;
@@ -20,7 +22,6 @@ body {
 }
 
 .logo{
-    height: 100%;
     display: flex;
     align-items: center;
     gap: 17px;
@@ -48,3 +49,83 @@ body {
     cursor: pointer;
     color: #FF5400;
 }
+
+/* *************************************************** */
+
+
+
+
+
+
+
+
+/* ****************! Media Query !***************** */
+
+@media (max-width: 576px) {
+    /* CSS rules for phones */
+   
+    /* Nav Bar */
+
+    .nav-container{
+        flex-direction: column;
+    }
+    
+    .logo{
+        flex-direction: column;
+    }
+    
+    .menu ul{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr);
+        text-align: center;
+    }
+
+    .menu ul li{
+        background-color: antiquewhite;
+        padding: 15px;
+        border-radius: 3px;
+    }
+
+    .menu ul li.r-full-w{
+        grid-column: span 2;
+    }
+
+    /* ************************************** */
+
+
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    /* CSS rules for tablets */
+    .nav-container{
+        flex-direction: column;
+    }
+    
+    .logo{
+        flex-direction: column;
+    }
+    
+    .menu ul{
+        margin-top: 30px;
+    }
+
+    .menu ul li{
+        background-color: antiquewhite;
+        padding: 15px;
+        border-radius: 3px;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* CSS rules for small laptops */
+    .nav-container{
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 25px;
+    }
+}
+
+
