@@ -1,3 +1,3 @@
 ## Hero Travel 
 
-#- Plain HTML CSS Projects
+# Plain HTML CSS Projects
